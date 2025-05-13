@@ -23,8 +23,6 @@ A comprehensive tool to continuously monitor your cloud configuration settings, 
 
 Cloud-based environments are continually evolving and require constant vigilance. The CSPM Dashboard monitors cloud configuration settings—via integration with AWS, Azure, or GCP APIs—compares them against security benchmarks (e.g., CIS Benchmarks, internal policies), and then flags potential misconfigurations. It computes a risk score for each resource and provides automated remediation recommendations (such as enforcing multi-factor authentication) to help SOC teams maintain a robust security posture.
 
-This project demonstrates advanced SOC capabilities, integrating Python for data fetching and risk evaluation, Node.js for API aggregation and alerting, and an HTML/JavaScript front-end for interactive visualization using Plotly.js.
-
 ---
 
 ## Key Features
