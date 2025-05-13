@@ -1,0 +1,14 @@
+[
+  {
+    "InstanceId": "i-0123456789abcdef0",
+    "State": "running",
+    "KeyName": "default-key",
+    "PublicIpAddress": "54.123.45.67"
+  },
+  {
+    "InstanceId": "i-abcdef0123456789",
+    "State": "stopped",
+    "KeyName": "default-key",
+    "PublicIpAddress": null
+  }
+]
