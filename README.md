@@ -16,7 +16,6 @@ A comprehensive tool to continuously monitor your cloud configuration settings, 
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
