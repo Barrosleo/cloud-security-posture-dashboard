@@ -101,18 +101,18 @@ Navigate to the python-module directory:
 
   ```bash
   cd python-module
-
+  ```
 Install the dependencies:
 
   ```bash
   pip install -r requirements.txt
-
+  ```
 Run the Python module to fetch and evaluate cloud configurations:
 
   ```bash
   python fetch_configs.py
   python evaluate_policies.py
-
+  ```
 Note: The sample data is located in python-module/sample_data/. Modify the scripts to connect to your actual cloud provider APIs if necessary.
 
 3. **Set Up the Node.js API & Dashboard
@@ -121,21 +121,21 @@ Navigate to the nodejs-api directory:
 
   ```bash
   cd ../nodejs-api
-
+  ```
 Install Node.js dependencies:
 
   ```bash
   npm install
-
+  ```
 Start the Node.js server:
 
   ```bash
   node server.js
-
+  ```
 Open your browser and access the dashboard at: http://localhost:3000/dashboard
 
 ## Project Structure
-
+```
 cloud-security-posture-dashboard/
 ├── README.md
 ├── docs/
@@ -150,7 +150,7 @@ cloud-security-posture-dashboard/
 │   ├── package.json            # Node.js dependencies and scripts
 │   └── views/
 │       └── dashboard.html      # Front-end dashboard (HTML/JavaScript with Plotly.js)
-
+```
 ## Usage
 
 Data Evaluation: Run the Python modules to fetch cloud configurations and evaluate security compliance. Adjust thresholds and policies in evaluate_policies.py based on your security benchmarks.
