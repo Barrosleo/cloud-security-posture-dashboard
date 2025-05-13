@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud Security Posture Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Cloud Security Posture Dashboard</h1>
+  <div id="chart" style="width: 90%; height: 500px;"></div>
+  <script>
+    fetch('/api/configs')
+      .then(response => response.json())
+      .then(data => {
+        // Map each cloud resource/config to a data point
+        const xValues = data.map((item, i) => new Date().getTime() + i * 1000); // simulate timeline
+        const yValues = data.map(item => item.risk_score);
+        const textValues = data.map(item =>
+          `Resource: ${item.InstanceId || item.ResourceID} <br> Risk Score: ${item.risk_score} <br> Rec: ${item.recommendations.join(', ')}`
+        );
+        
+        const trace = {
+          x: xValues,
+          y: yValues,
+          mode: 'markers',
+          type: 'scatter',
+          text: textValues,
+          marker: { size: 14, color: 'orange' }
+        };
+        
+        const layout = {
+          title: 'Cloud Security Risk Scores',
+          xaxis: { title: 'Time' },
+          yaxis: { title: 'Risk Score' }
+        };
+
+        Plotly.newPlot('chart', [trace], layout);
+      })
+      .catch(error => console.error('Error loading cloud configs:', error));
+  </script>
+</body>
+</html>
