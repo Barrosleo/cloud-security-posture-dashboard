@@ -95,7 +95,7 @@ For an in-depth explanation of the architecture and data flows, see the [docs/ar
    git clone https://github.com/yourusername/cloud-security-posture-dashboard.git
    cd cloud-security-posture-dashboard
 
-2. **Set Up the Python Module
+2. **Set Up the Python Module**
 
 Navigate to the python-module directory:
 
@@ -115,7 +115,7 @@ Run the Python module to fetch and evaluate cloud configurations:
   ```
 Note: The sample data is located in python-module/sample_data/. Modify the scripts to connect to your actual cloud provider APIs if necessary.
 
-3. **Set Up the Node.js API & Dashboard
+3. **Set Up the Node.js API & Dashboard**
 
 Navigate to the nodejs-api directory:
 
